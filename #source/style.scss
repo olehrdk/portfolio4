@@ -965,7 +965,6 @@ body.lock{
         transition: all 0.3s ease-out;
           opacity: 0;
         height: 0;
-         z-index: 4;
          &:checked + label {
             background-color: #dedede;
           }
@@ -974,11 +973,14 @@ body.lock{
             top: 0;
             left: 0;
             opacity: 0;
+            height: 0;
+            margin: 0;
             visibility: hidden;
         }   
         .form__select-label{
             text-transform: uppercase;
-            padding: 10px 15px;
+            padding: 10px 15px;padding: 0;
+            height: 0;
             &:last-child{
                 margin-bottom: 0;
             }
@@ -1000,6 +1002,10 @@ body.lock{
     .form__select-content{
         opacity: 1;
         height: auto;
+        .form__select-label{
+            padding: 10px 15px;
+            height: auto;
+        }
     }   
 }
 
