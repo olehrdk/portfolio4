@@ -1019,7 +1019,7 @@ body.lock {
 	transition: all 0.3s ease-out;
 	opacity: 0;
 	height: 0;
-	z-index: 4;
+	overflow: hidden;
 }
 .form__select .form__select-content:checked + label {
 	background-color: #dedede;
@@ -1030,10 +1030,13 @@ body.lock {
 	left: 0;
 	opacity: 0;
 	visibility: hidden;
+	height: 0;
+	margin: 0;
 }
 .form__select .form__select-content .form__select-label {
 	text-transform: uppercase;
-	padding: 10px 15px;
+	padding: 0;
+	height: 0;
 }
 .form__select .form__select-content .form__select-label:last-child {
 	margin-bottom: 0;
@@ -1051,6 +1054,10 @@ body.lock {
 }
 .form__select[data-state=active] .form__select-content {
 	opacity: 1;
+	height: auto;
+}
+.form__select[data-state=active] .form__select-content .form__select-label {
+	padding: 10px 15px;
 	height: auto;
 }
 
