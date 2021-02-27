@@ -351,9 +351,13 @@ body.lock {
 		top: 7px;
 	}
 }
-.banner {
-	background: url(../images/leaf.png) no-repeat left center/12.5%;
+.banner {	
 	padding: 120px 0 12%;
+}
+@media (min-width: 600px) {
+	.banner {
+		background: url(../images/leaf.png) no-repeat left 20%/12.5%;
+	}
 }
 .banner .banner__image {
 	width: 43.4%;
