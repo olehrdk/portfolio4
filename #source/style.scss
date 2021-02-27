@@ -243,7 +243,9 @@ body.lock{
 //banner
 .banner {
     
-    background: url(../images/leaf.png) no-repeat left center/12.5%;
+   @media(min-width:600px){
+        background: url(../images/leaf.png) no-repeat left 20%/12.5%;
+    }
     padding: 120px 0 12%;
     .banner__image {
         width: 43.4%;
