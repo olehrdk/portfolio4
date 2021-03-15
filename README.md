@@ -12,6 +12,7 @@
 
 # Technologies used here:
 - HTML / CSS;
+- SCSS
 - Grid
 - Java Script
 - Swiper ( slider )
